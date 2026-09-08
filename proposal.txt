@@ -1,0 +1,38 @@
+Escape Room - Security Challenge: Path Traversal + Command Injection Chain
+
+Difficulty :
+
+The project will have a moderate level of difficulty because it requires the user to understand basic Python programming, file management, Linux commands, and cybersecurity concepts. The main difficulty will be understanding how two different security vulnerabilities, Path Traversal and Command Injection, can be identified and connected together to complete the challenge. This difficulty will be handled by dividing the project into two smaller challenges, where the first challenge provides a clue needed to solve the second challenge. The project will also be run inside an independent Docker container or virtual machine to keep the testing environment isolated and manageable.
+
+Intended Approach :
+
+The objective of this project is to show how two security vulnerabilities can be chained together to compromise a system. 
+As such, the first task will be to implement a Path Traversal security challenge. Here, the user will have to find how to use the vulnerability to view a specific file that contains a hint or part of the required password for the next challenge. The second task to be implemented is a Command Injection challenge. Using the hint from the first challenge, the user should be able to locate the Command Injection vulnerability and utilize it to get the final flag or reward.
+
+The intended approach of this Project is as follows:Start Challenge → Locate Path Traversal → Access Hidden Location/Password → Use Hidden Clue → Locate Command Injection → Access Final Reward/Flag → Escape
+
+The vulnerable environment will be created using Python scripts and Linux-based files/commands and will be implemented in such a way that the game can be played through the terminal inside a Docker container or virtual machine.
+
+Verification/Evaluation :
+
+The verification process for this project will involve testing the completed escape room challenge in the Docker container or virtual machine. Several test cases will be carried out, including:
+
+1. Test whether the user can identify the Path Traversal vulnerability.
+
+2. Test whether the user can find the hidden location or password.
+
+3. Test whether the hidden clue obtained through Path Traversal works as expected.
+
+4. Test whether the user can identify the Command Injection vulnerability.
+
+5. Test whether the Command Injection vulnerability can be used to access the final flag.
+
+6. Test whether other unexpected inputs can compromise or affect the system.
+
+7. Test whether the game restarts correctly after the exit command.
+
+Each test case will be marked as Pass if the expected result is obtained and Fail if the expected result is not obtained.
+
+Category/Subcategory :
+
+The project falls under the Cybersecurity category and has the Security Testing and Vulnerability Exploitation subcategory.
